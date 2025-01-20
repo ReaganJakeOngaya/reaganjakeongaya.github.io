@@ -41,3 +41,23 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// Scroll-to-Top Button Functionality
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+window.addEventListener('scroll', () => {
+    // Show the button when scrolled down 200px
+    if (window.scrollY > 200) {
+        scrollToTopBtn.classList.add('show');
+    } else {
+        scrollToTopBtn.classList.remove('show');
+    }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+    // Smooth scroll to the top
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

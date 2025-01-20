@@ -9,6 +9,8 @@ body {
     line-height: 1.6;
     margin: 0;
     background-color: #000000;
+    /* font-family: 'Roboto', sans-serif; */
+
 }
 html {
     scroll-behavior: smooth;
@@ -415,5 +417,351 @@ html {
 
     .tech-icons {
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
+
+
+/* Projects Section */
+.projects {
+    padding: 80px 0;
+    color: white;
+    height: 100%;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.project-card {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.project-info p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.project-info .btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff9800;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.project-info .btn:hover {
+    background-color: #e67e22;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Hover effect to lift the card */
+}
+
+@media (max-width: 768px) {
+    .projects h2 {
+        font-size: 2rem;
+    }
+}
+
+
+/* Services Section */
+.services {
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+    height: 100%;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.service-item {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.service-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Hover effect to lift the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .services h2 {
+        font-size: 2rem;
+    }
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+    height: 100%;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.contact-details {
+    flex: 1;
+    max-width: 400px;
+}
+
+.contact-details h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.contact-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-details ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.contact-details ul li a {
+    color: #51a4ac;
+    text-decoration: none;
+}
+
+.contact-details ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+    /* background-color: #2a2a2a; */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+input{
+    border: 1px solid rgb(59, 148, 195);
+}
+
+.contact-form button {
+    background-color: #010101;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #242322;
+}
+
+.map {
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .map iframe {
+        width: 100%;
+    }
+}
+
+
+/* Scroll-to-Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #514f4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    z-index: 1000;
+    margin-bottom: 10px;
+}
+
+.scroll-to-top:hover {
+    background-color: #302f2e;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+
+/* Footer Styles */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-top: 2px solid #ff9800;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #ff9800;
+}
+.footer-logo{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer .social-icons a {
+        font-size: 12px;
     }
 }
