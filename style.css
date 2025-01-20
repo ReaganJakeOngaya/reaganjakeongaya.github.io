@@ -86,7 +86,7 @@ html {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    background-color: white;
+    background-color: #00bcd4;
 }
 
 .bar {
