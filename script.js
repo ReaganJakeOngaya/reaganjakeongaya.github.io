@@ -1,7 +1,7 @@
 // Navbar
 // Mobile Button
 const mobileMenu = document.getElementById("mobile-menu");
-const navLinks = document.querySelector(".nav-links a");
+const navLinks = document.querySelector(".nav-links");
 
 mobileMenu.addEventListener("click", () => {
     navLinks.classList.toggle("active");
@@ -34,7 +34,7 @@ window.addEventListener('scroll', () => {
         }
     });
 
-    navLinks.forEach((link) => {
+    Array.from(navLinks).forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
             link.classList.add('active');
