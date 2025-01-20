@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=apps" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 </head>
@@ -143,92 +144,93 @@
 
     <!--  -->
 <!--  -->
-    <section class="projects" id="projects">
-    <div class="project-container">
-        <h2>My Projects</h2>
-        <div class="project-cards">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <img src="https://via.placeholder.com/350" alt="Project 1">
-                <div class="project-info">
-                    <h3>Project 1</h3>
-                    <p>A brief description of what this project does and the technologies used.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="https://via.placeholder.com/350" alt="Project 2">
-                <div class="project-info">
-                    <h3>Project 2</h3>
-                    <p>A brief description of what this project does and the technologies used.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="https://via.placeholder.com/350" alt="Project 3">
-                <div class="project-info">
-                    <h3>Project 3</h3>
-                    <p>A brief description of what this project does and the technologies used.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-            </div>
+    <section id="projects" class="projects-section">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="/assets/website.webp" alt="Portfolio Website" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-description">A personal portfolio website built with React and TailwindCSS.</p>
+          <a href="https://your-portfolio-link.com" target="_blank" class="project-link">View Project &rarr;</a>
         </div>
+      </div>
+      <div class="project-card">
+        <img src="/assets/mydevice-dashboard.png" alt="E-Commerce Platform" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">E-Commerce Platform</h3>
+          <p class="project-description">An e-commerce platform for selling electronics with a React frontend and Flask backend.</p>
+          <a href="https://your-ecommerce-link.com" target="_blank" class="project-link">View Project &rarr;</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/assets/chatbotapp.webp" alt="Chat Application" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Chat Application</h3>
+          <p class="project-description">A real-time chat app with React, Node.js, and WebSocket integration.</p>
+          <a href="https://your-chat-app-link.com" target="_blank" class="project-link">View Project &rarr;</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/assets/notebookapp.webp" alt="Note-Taking App" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Note-Taking App</h3>
+          <p class="project-description">A modern note-taking app with bookmarking and tagging features.</p>
+          <a href="https://your-note-taking-app-link.com" target="_blank" class="project-link">View Project &rarr;</a>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 <!--  -->
 
-<section class="services" id="services">
-    <div class="service-container">
-        <h2>My Services</h2>
-        <div class="services-list">
-            <!-- Service 1 -->
-            <div class="service-item">
-                <img src="https://img.icons8.com/color/48/000000/code.png" alt="Web Development">
-                <h3>Web Development</h3>
-                <p>I build responsive, scalable, and high-performance websites using the latest technologies.</p>
-            </div>
-
-            <!-- Service 2 -->
-            <div class="service-item">
-                <img src="https://img.icons8.com/color/48/000000/mobile-phone.png" alt="Mobile App Development">
-                <h3>Mobile App Development</h3>
-                <p>Creating mobile apps for both Android and iOS with a focus on user experience and performance.</p>
-            </div>
-
-            <!-- Service 3 -->
-            <div class="service-item">
-                <img src="https://img.icons8.com/color/48/000000/seo.png" alt="SEO Optimization">
-                <h3>SEO Optimization</h3>
-                <p>Helping websites rank higher on search engines and drive more organic traffic.</p>
-            </div>
-
-            <!-- Service 4 -->
-            <div class="service-item">
-                <img src="https://img.icons8.com/color/48/000000/database.png" alt="Database Management">
-                <h3>Database Management</h3>
-                <p>Efficiently managing and optimizing databases for faster and more reliable access.</p>
-            </div>
-
-            <!-- Service 5 -->
-            <div class="service-item">
-                <img src="https://img.icons8.com/color/48/000000/coding.png" alt="Custom Software Development">
-                <h3>Custom Software Development</h3>
-                <p>Building custom software solutions to meet unique business requirements.</p>
-            </div>
-
-            <!-- Service 6 -->
-            <div class="service-item">
-                <img src="https://img.icons8.com/color/48/000000/cloud.png" alt="Cloud Services">
-                <h3>Cloud Services</h3>
-                <p>Providing cloud-based solutions for data storage, hosting, and scalability.</p>
-            </div>
+ <section id="services" class="services-section">
+    <h2 class="section-title">My Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-image">
+          <img src="https://images.surferseo.art/9602bc4b-cfc4-410e-b291-611d478c9d6a.png" alt="Frontend Development">
         </div>
+        <div class="service-content">
+          <img src="https://img.icons8.com/?size=100&id=81WilxWp48oi&format=png&color=000000" alt="Icon" class="service-icon">
+          <h3 class="service-title">Frontend Development</h3>
+          <p class="service-description">Building responsive and dynamic websites using modern technologies.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhybMkb0r7m9dy-B758PTm8u7IA4ZmSLiz7Q&s" alt="Backend Development">
+        </div>
+        <div class="service-content">
+          <img src="https://img.icons8.com/?size=100&id=Ujhf0HU7XkM4&format=png&color=000000" alt="Icon" class="service-icon">
+          <h3 class="service-title">Backend Development</h3>
+          <p class="service-description">Developing robust and scalable server-side applications.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-image">
+          <img src="https://supersourcing.com/blog/wp-content/uploads/2021/07/1-8.jpg" alt="UI/UX Design">
+        </div>
+        <div class="service-content">
+          <img src="https://img.icons8.com/?size=100&id=TNMFlPDNS18k&format=png&color=000000" alt="Icon" class="service-icon">
+          <h3 class="service-title">UI/UX Development</h3>
+          <p class="service-description">Crafting from to designing  intuitive and visually appealing user interfaces.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-image">
+          <img src="https://ellow.io/wp-content/uploads/2024/03/Frontend-vs-Backend-edited.png" alt="API Integration">
+        </div>
+        <div class="service-content">
+          <img src="https://img.icons8.com/?size=100&id=1DMI6yH4fduC&format=png&color=000000" alt="Icon" class="service-icon">
+          <h3 class="service-title">API Integration</h3>
+          <p class="service-description">Integrating third-party APIs for seamless data connectivity.</p>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 <!--  -->
 
 
@@ -249,20 +251,19 @@
 
             <div class="contact-form">
                 <h3>Send a Message</h3>
-                <form action="#" method="post">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                <form id="contact-form">
+                    <input type="text" name="user_name" placeholder="Your Name" required>
+                    <input type="email" name="user_email" placeholder="Your Email" required>
                     <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
         </div>
-        <div class="map">
+        <!-- <div class="map">
             <h3>Find Me Here</h3>
-            <!-- Embedding Google Map of Nairobi -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15907.459383355467!2d36.82194619822295!3d-1.2863893178853603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3a9b44cd1d99%3A0xd2a98bc8fd8a0be4!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1634076261191!5m2!1sen!2sus" 
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+        </div> -->
     </div>
 </section>
 
@@ -294,5 +295,6 @@
 
 
     <script src="script.js"></script>
+
 </body>
 </html>

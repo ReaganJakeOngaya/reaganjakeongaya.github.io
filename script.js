@@ -61,3 +61,28 @@ scrollToTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+// Initialize EmailJS
+    (function () {
+      emailjs.init("Mrso7_FykxfQLxVaR"); // Replace "YOUR_USER_ID" with your EmailJS user ID
+    })();
+
+    // Form submission handler
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Replace these values with your EmailJS Service ID and Template ID
+      const serviceID = "service_sw7fxnu";
+      const templateID = "template_hhmg7bd";
+
+      emailjs.sendForm(serviceID, templateID, this).then(
+        (response) => {
+          alert("Message sent successfully!");
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        (error) => {
+          alert("Failed to send the message. Please try again.");
+          console.error("FAILED...", error);
+        }
+      );
+    });
