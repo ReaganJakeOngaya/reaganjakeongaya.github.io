@@ -10,18 +10,25 @@ body {
     margin: 0;
     background-color: #000000;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 
 /* Navbar Styling */
 .navbar {
-    /* background-color: #1a1a1a; */
-    color: rgb(249, 249, 249);
-    padding: 15px 20px;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 1000;
+    left: 0;
     width: 100%;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    backdrop-filter: blur(10px); /* Applies the blur effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    z-index: 1000; /* Ensures the navbar is above other elements */
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease; /* Smooth transitions */
 }
 
 .container {
@@ -65,6 +72,11 @@ body {
 .nav-links li a:hover {
     border-bottom: 2px solid gray;
     color: #14cade;
+}
+.nav-links a.active {
+    color: #ff9800; /* Highlight color */
+    font-weight: bold;
+    border-bottom: 2px solid #231603;
 }
 
 /* Mobile Menu Toggle */
@@ -327,5 +339,81 @@ body {
 
     .about-content .intro, .about-content .details {
         font-size: 1rem;
+    }
+}
+
+/* Tech Stack Section */
+.tech-stack {
+    background-color: black;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.tech-stack h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.tech-stack p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.tech-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.tech-item {
+    text-align: center;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateY(-10px);
+    /* box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); */
+}
+
+.tech-item:hover img {
+    transform: scale(1.1);
+}
+
+.tech-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .tech-stack h2 {
+        font-size: 2rem;
+    }
+
+    .tech-stack p {
+        font-size: 1rem;
+    }
+
+    .tech-icons {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
 }
