@@ -5,32 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=apps" />
+</head>
+
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <a href="#">MyBrand</a>
+                <a href="#">Jake</a>
             </div>
             <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="material-symbols-outlined">
+                   apps
+                </span>
             </div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Tech</a></li>
-                <li><a href="#">Markets</a></li>
-                <li><a href="#">Leadership</a></li>
-                <li><a href="#">Lifestyle</a></li>
-                <li><a href="#">More</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Tech Stack</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
+            <div class="btn">
+                <li><a href="#">Subscribe</a></li>
+            </div>
         </div>
     </nav>
-    <footer>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="diagonal-container">
+            <div class="image-content">
+                <img src="/assets/reaganjakeprof.jpg" alt="Reagan Jake Ongaya">
+            </div>
+            <div class="text-content">
+                <h1>Hi, I'm <span>Reagan O. Jake</span></h1>
+                <h2><span class="dynamic-text"></span></h2>
+                <p>Passionate about crafting impactful software solutions that bridge the gap between creativity and functionality.</p>
+                <blockquote>“Code is my art, and the web is my canvas.”</blockquote>
+                <a href="#contact" class="btn">Work with Me</a>
+            </div>
+        </div>
+    </section>
+    <!-- ************* -->
+    <!-- About -->
+     <section class="about" id="about">
+    <div class="about-container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p class="intro">
+                Hello! I'm  a dedicated <span>Software Developer</span> with a passion for creating scalable, efficient, and user-friendly solutions. I specialize in backend development, modern UI design, and building responsive web applications.
+            </p>
+            <p class="details">
+                With a keen eye for detail and a drive for innovation, I thrive on solving complex challenges and turning ideas into reality. My mission is to craft experiences that leave a lasting impact, whether it’s through code or collaboration.
+            </p>
+        </div>
+    </div>
+</section>
+    <!-- ************ -->
+    <!-- <footer>
         <p>©2025 ReaganJake. All rights reserved.</p>
-    </footer>
+    </footer> -->
 
     <script src="script.js"></script>
 </body>
