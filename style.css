@@ -48,7 +48,8 @@ html {
     font-weight: bold;
     color: #00bcd4; /* Accent color */
     transition: color 0.3s;
-    font-family: 'Popins';
+    /* font-family: 'Cursive'; */
+    font-family: Cursive ;
     text-transform: uppercase;
 }
 
