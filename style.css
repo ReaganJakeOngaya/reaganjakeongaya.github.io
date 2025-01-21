@@ -91,6 +91,7 @@ html {
 .nav-links img {
   width: 20px;
   height: 20px;
+  background-color: white;
 }
 
 /* Mobile Menu Toggle */
