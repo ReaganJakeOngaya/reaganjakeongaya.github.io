@@ -701,12 +701,12 @@ html {
     font-size: 1rem;
 }
 
-input{
+.contact-form input{
     border: 1px solid rgb(59, 148, 195);
 }
 
 .contact-form button {
-    background-color: #010101;
+    background-color:rgb(31, 31, 31);
     color: white;
     padding: 15px 30px;
     border: none;
@@ -717,7 +717,8 @@ input{
 }
 
 .contact-form button:hover {
-    background-color: #242322;
+    background-color:rgb(60, 107, 106);
+    color: rgb(0, 0, 0);
 }
 
 .map {
