@@ -638,7 +638,7 @@ html {
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 50px;
+    padding: 40px;
 }
 
 .contact-details {
@@ -691,17 +691,13 @@ html {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 15px;
+    padding: 5px;
     margin: 10px 0;
-    background-color: #1f1f1f;
-    border: 1px solid #333;
-    border-radius: 5px;
+    background-color:rgb(0, 0, 0);
+    border: 1px solid rgb(59, 148, 195);
+    border-radius: 25px;
     color: white;
     font-size: 1rem;
-}
-
-.contact-form  textarea input{
-    border: 1px solid rgb(59, 148, 195);
 }
 
 .contact-form button {
