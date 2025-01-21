@@ -643,7 +643,7 @@ html {
 
 .contact-details {
     flex: 1;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .contact-details h3 {
@@ -678,9 +678,8 @@ html {
 
 .contact-form {
     flex: 1;
-    max-width: 500px;
-    /* background-color: #2a2a2a; */
-    padding: 20px;
+    max-width: 400px;
+    padding: 10px;
     border-radius: 8px;
 }
 
@@ -701,7 +700,7 @@ html {
     font-size: 1rem;
 }
 
-.contact-form input{
+.contact-form  textarea input{
     border: 1px solid rgb(59, 148, 195);
 }
 
