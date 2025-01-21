@@ -183,8 +183,9 @@ html {
     font-size: 1.2rem;
     margin-top: 10px;
     padding-left: 20px;
-    border-left: 3px solid #ff5722;
-    color: #bbb;
+    border-left: 3px solid rgb(131, 31, 0);
+    background-color:rgb(247, 110, 69) ;
+    color: rgb(20, 19, 18);
     font-style: italic;
 }
 
@@ -204,17 +205,8 @@ html {
     object-fit: cover;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     transform: translateY(50px);
-    /* animation: float 6s infinite ease-in-out; */
 }
 
-/* @keyframes float {
-    0%, 100% {
-        transform: translateY(50px);
-    }
-    50% {
-        transform: translateY(0);
-    }
-} */
  .home {
   display: flex;
   align-items: center;
