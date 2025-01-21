@@ -50,7 +50,7 @@ html {
     transition: color 0.3s;
     /* font-family: 'Cursive'; */
     font-family: Cursive ;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .logo a:hover {
