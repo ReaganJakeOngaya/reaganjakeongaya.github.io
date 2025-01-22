@@ -82,24 +82,34 @@ html {
 
 .nav-links a.active {
     font-weight: bold;
-    border-bottom: 2px solid #231603;
+    border-bottom: 2px solid #0ec405;
 }
 
-/* Mobile Menu Toggle */
+/* Menu Toggle */
 .menu-toggle {
     display: none;
     align-items: center;
     cursor: pointer;
     background: none;
+    position: relative;
+    z-index: 1050;
+    transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+.menu-toggle.open {
+    transform: rotate(90deg) scale(1.2);
 }
 
 .menu-toggle img {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, scale 0.3s ease;
 }
 
+
+
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
     .menu-toggle {
         display: flex;
     }
