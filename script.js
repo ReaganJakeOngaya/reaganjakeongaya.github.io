@@ -1,13 +1,33 @@
-// Navbar
-// Mobile Button
+// Navbar Toggle
 const mobileMenu = document.getElementById("mobile-menu");
 const navLinks = document.querySelector(".nav-links");
 
 mobileMenu.addEventListener("click", () => {
     navLinks.classList.toggle("active");
+    mobileMenu.classList.toggle("open");
 });
-// 
 
+// Highlight Active Link on Scroll
+const sections = document.querySelectorAll("section");
+const navLinksItems = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+    let currentSection = "";
+
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 60;
+        if (scrollY >= sectionTop) {
+            currentSection = section.getAttribute("id");
+        }
+    });
+
+    navLinksItems.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${currentSection}`) {
+            link.classList.add("active");
+        }
+    });
+});
 
 // Home 
 const professions = ["A Software Developer", "A Problem Solver", "A Tech Enthusiast"];
@@ -20,27 +40,6 @@ function typeText() {
 }
 
 setInterval(typeText, 2000);
-
-// Highlight active link based on scroll position
-const sections = document.querySelectorAll('section');
-
-window.addEventListener('scroll', () => {
-    let current = '';
-
-    sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        if (scrollY >= sectionTop - 60) {
-            current = section.getAttribute('id');
-        }
-    });
-
-    Array.from(navLinks).forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
-        }
-    });
-});
 
 // Scroll-to-Top Button Functionality
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
