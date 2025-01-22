@@ -85,3 +85,30 @@ scrollToTopBtn.addEventListener('click', () => {
         }
       );
     });
+
+// const themeToggle = document.getElementById("theme-toggle");
+// const themeIcon = document.getElementById("theme-icon");
+// const userPref = localStorage.getItem("theme");
+
+// // Initialize Theme Based on User Preference or Default
+// if (userPref === "dark") {
+//     document.documentElement.setAttribute("data-theme", "dark");
+//     themeIcon.src = "https://img.icons8.com/?size=50&id=19296&format=png"; // Dark Mode Icon
+// } else {
+//     document.documentElement.setAttribute("data-theme", "light");
+//     themeIcon.src = "https://img.icons8.com/?size=50&id=15493&format=png"; // Light Mode Icon
+// }
+
+// // Toggle Theme
+// themeToggle.addEventListener("click", () => {
+//     const currentTheme = document.documentElement.getAttribute("data-theme");
+//     const newTheme = currentTheme === "dark" ? "light" : "dark";
+//     document.documentElement.setAttribute("data-theme", newTheme);
+//     localStorage.setItem("theme", newTheme);
+
+//     // Update Icon
+//     themeIcon.src =
+//         newTheme === "dark"
+//             ? "https://img.icons8.com/?size=50&id=19296&format=png" // Dark Mode Icon
+//             : "https://img.icons8.com/?size=50&id=15493&format=png"; // Light Mode Icon
+// });
