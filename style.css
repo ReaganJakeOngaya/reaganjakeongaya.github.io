@@ -101,7 +101,6 @@ html {
 }
 
 .bar {
-    background-color: rgb(4, 4, 4);
     height: 3px;
     width: 25px;
     margin: 4px 0;
@@ -141,8 +140,10 @@ html {
         position: absolute;
         top: 70px;
         right: 20px;
-        background-color: #1a1a1a;
+        background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+        backdrop-filter: blur(100%);
         padding: 15px;
+        border: 1px solid rgb(54, 139, 185);
         border-radius: 5px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
@@ -191,7 +192,7 @@ html {
 
 .text-content blockquote {
     font-size: 1.2rem;
-    width: fit-content;
+    /* width: fit-content; */
     margin-top: 10px;
     padding: 0.5rem;
     border-left: 3px solid rgb(131, 31, 0);
@@ -210,8 +211,8 @@ html {
 }
 
 .image-content img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 20px;
     border: 2px solid white;
     object-fit: cover;
