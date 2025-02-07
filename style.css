@@ -404,12 +404,24 @@ html {
     color: white;
     padding: 60px 20px;
     text-align: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.tech-container {
+    width: 100%;
+    overflow: hidden;
 }
 
 .tech-stack h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-bottom: 2px solid white;
@@ -417,60 +429,73 @@ html {
     padding-bottom: 10px;
 }
 
-.tech-stack p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    color: #ccc;
+.tech-scroll {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
 }
 
+/* Ensure proper spacing & seamless loop */
 .tech-icons {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    margin-top: 20px;
+    display: flex;
+    gap: 80px; /* Increased spacing */
+    min-width: max-content; /* Ensures all items fit in a row */
+    animation: infinite-scroll 15s linear infinite;
+    animation-delay: calc(15s / -1);
+    align-items: center;
 }
 
+/* Duplicate items to create seamless loop */
+.tech-icons::after {
+    content: "";
+    display: flex;
+    width: 100%;
+}
+
+/* Styling for each item */
 .tech-item {
-    text-align: center;
-    font-size: 1.2rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tech-item img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
-}
-
-.tech-item:hover {
-    transform: translateY(-10px);
-    
-}
-
-.tech-item:hover img {
-    transform: scale(1.1);
-}
-
-.tech-item p {
-    margin-top: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 1px;
     color: #fff;
+    padding: 15px 20px;
+    border-radius: 7px;
+    /* box-shadow: rgb(89, 121, 107) 0px 0px 15px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px; /* Ensures items don't shrink */
+}
+
+/* Icons styling */
+.tech-item img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+/* Smooth infinite scroll */
+@keyframes infinite-scroll {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .tech-stack h2 {
-        font-size: 2rem;
-    }
-
-    .tech-stack p {
-        font-size: 1rem;
-    }
-
     .tech-icons {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 50px; /* Adjust spacing */
+    }
+
+    .tech-item {
+        min-width: 140px;
     }
 }
 
