@@ -429,6 +429,7 @@ html {
     padding-bottom: 10px;
 }
 
+/* Scrolling container */
 .tech-scroll {
     display: flex;
     width: 100%;
@@ -437,25 +438,16 @@ html {
     position: relative;
 }
 
-/* Ensure proper spacing & seamless loop */
+/* Duplicate items for a seamless effect */
 .tech-icons {
     display: flex;
-    gap: 80px; /* Increased spacing */
-    min-width: max-content; /* Ensures all items fit in a row */
+    gap: 60px;
+    min-width: 200%;
     animation: infinite-scroll 15s linear infinite;
-    animation-delay: calc(15s / -1);
     align-items: center;
 }
 
-/* Duplicate items to create seamless loop */
-.tech-icons::after {
-    content: "";
-    display: flex;
-    width: 100%;
-}
-
-/* Styling for each item */
-.tech-item {
+.tech-icons .tech-item {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
@@ -468,36 +460,38 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 160px; /* Ensures items don't shrink */
+    min-width: 140px;
 }
 
-/* Icons styling */
+/* Icons */
 .tech-item img {
     width: 48px;
     height: 48px;
     margin-bottom: 10px;
 }
 
-/* Smooth infinite scroll */
+/* 🔄 True Infinite Scrolling Effect */
 @keyframes infinite-scroll {
-    from {
+    0% {
         transform: translateX(0%);
     }
-    to {
+    100% {
         transform: translateX(-50%);
     }
 }
 
-/* Responsive Design */
+/* 🌟 Mobile Adjustments */
 @media screen and (max-width: 768px) {
     .tech-icons {
-        gap: 50px; /* Adjust spacing */
+        gap: 40px;
+        min-width: 300%;
     }
 
     .tech-item {
-        min-width: 140px;
+        min-width: 120px;
     }
 }
+
 
 
 /* General Styles for Projects Section */
