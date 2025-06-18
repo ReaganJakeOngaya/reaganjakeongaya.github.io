@@ -206,7 +206,7 @@
   align-items: center;
   width: 44px;
   height: 44px;
-  background: var(--glass-bg);
+  background: var(--dark-glass-bg);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-xl);
   backdrop-filter: var(--glass-backdrop);
